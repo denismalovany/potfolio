@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Product Designer Portfolio
 
-## Getting Started
+A clean, professional portfolio website for a Product Designer, built with Next.js and Tailwind CSS.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Responsive design optimized for desktop and mobile
+- Fast loading with static generation
+- SEO optimized with meta tags and Open Graph
+- Accessible with semantic HTML and keyboard navigation
+- Typography-first design with clear hierarchy
+- Case study pages with sticky table of contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup Instructions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone or navigate to the project directory:
+   ```bash
+   cd "/Users/denys/Desktop/test page/portfolio"
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/app/` - Next.js app router pages
+- `src/components/` - Reusable React components
+- `src/data/` - Content data files (case studies, about, site info)
+- `public/images/` - Placeholder images (replace with real ones)
 
-## Deploy on Vercel
+## Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Content Replacement
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Site Data** (`src/data/site.ts`): Update name, title, positioning, contact info.
+2. **About Data** (`src/data/about.ts`): Replace bio, skills, timeline with real content.
+3. **Case Studies** (`src/data/caseStudies.ts`): Replace demo content with real case studies. Add full details for each.
+
+### Images
+
+Replace placeholder images in `public/images/` with real screenshots and photos:
+- `case1-thumb.jpg`, `case1-screen1.jpg`, etc. - Case study images
+- `portrait.jpg` - Profile photo
+
+### Styling
+
+The design uses Tailwind CSS. Customize colors, fonts, and spacing in component files.
+
+## Build and Deploy
+
+1. Build for production:
+   ```bash
+   npm run build
+   ```
+
+2. Start production server:
+   ```bash
+   npm start
+   ```
+
+Deploy to Vercel, Netlify, or any static hosting service.
+
+## Architecture Notes
+
+- **Data-Driven**: Content stored in TypeScript files for easy editing.
+- **Component-Based**: Modular components for maintainability.
+- **Static Generation**: Fast loading and SEO benefits.
+- **Responsive**: Mobile-first design with Tailwind breakpoints.
+- **Accessible**: Semantic HTML, alt text, focus states.
+
+## Demo Content
+
+The site includes:
+- 1 fully detailed case study
+- 2 placeholder case studies
+- Sample about content
+- NDA-safe presentation patterns (anonymized metrics, blurred visuals)
+
+Replace all placeholder content with real information before publishing.
